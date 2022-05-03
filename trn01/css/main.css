@@ -204,6 +204,7 @@
 .main_link h2 {
     text-align: center;
     margin: 0 0 50px 0;
+    color:#ddd
 }
 
 .main_link h2::before {
