@@ -11,7 +11,11 @@ $(function () {
         dots: true
     });
 
-    $('.mopen').on('click',function (){
+    $('.mopen').on('click', function () {
         $('.gnb').toggleClass('on')
+    })
+
+    $('.mopen').on('click', function () {
+        $('.mopen').toggleClass('on')
     })
 })

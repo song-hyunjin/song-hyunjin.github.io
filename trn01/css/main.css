@@ -723,4 +723,21 @@ responsive 768
         top: 21px;
     }
 
+    .mopen.on>span:nth-child(1) {
+        display: none;
+    }
+
+    .mopen.on>span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .mopen.on>span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .mopen.on>span:nth-child(4) {
+        display: none
+    }
+
+
 }
