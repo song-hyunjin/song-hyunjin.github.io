@@ -100,11 +100,13 @@ responsive 768
         margin: 0;
         padding: 80;
         text-align: center;
-        display: inline-block;
-        text-align: center;
     }
 
-    .main_visual .main_slider img {}
+    .main_visual .main_slider img {
+        display: inline-block;
+        text-align: center;
+
+    }
 
     .mopen {
         position: fixed;
