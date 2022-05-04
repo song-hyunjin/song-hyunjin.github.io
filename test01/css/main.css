@@ -10,14 +10,11 @@
 }
 
 .header .gnb {
-    margin: 10px 0 0 0;
+    margin: 0 auto;
 }
 
 .header .gnb>ul {
     display: flex;
-    margin: 0;
-    padding: 10px;
-    justify-content: center;
     gap: 120px;
     line-height: 90px;
     font-size: 19px;
@@ -36,4 +33,126 @@
     display: inline-block;
     text-align: center;
 
+}
+
+/* 
+
+
+responsive 768
+
+
+
+*/
+
+@media (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header h1 {
+        top: auto;
+        width: 100%;
+    }
+
+    .header .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #999;
+        width: calc(100% - 70%);
+        height: 100vh;
+        margin: 0 0 0 auto;
+        border-right: 1px solid #333;
+        text-align: center;
+        z-index: 999;
+        transition: 0.5s;
+    }
+
+    .header .gnb.on {
+        left: 0;
+    }
+
+    .header .gnb>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 15px;
+        line-height: 80px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .header .gnb>ul a {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* 메인비주얼 */
+    .main_visual {
+        display: none;
+        margin: 0;
+        padding: 80;
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .main_visual .main_slider img {}
+
+    .mopen {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        background: rgb(68, 69, 68);
+    }
+
+    .mopen span {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        height: 3px;
+        background: #fff;
+    }
+
+    .mopen span:nth-child(1) {
+        top: 5px;
+    }
+
+    .mopen span:nth-child(2) {
+        top: 13px;
+    }
+
+    .mopen span:nth-child(3) {
+        top: 13px;
+    }
+
+    .mopen span:nth-child(4) {
+        top: 21px;
+    }
+
+    .mopen.on>span:nth-child(1) {
+        display: none;
+    }
+
+    .mopen.on>span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .mopen.on>span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .mopen.on>span:nth-child(4) {
+        display: none
+    }
 }

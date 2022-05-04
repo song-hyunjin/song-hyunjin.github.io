@@ -3,8 +3,16 @@ $(function () {
         arrows:false,
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 300,
         fade: true,
         cssEase: 'linear'
     });
+
+    $('.mopen').on('click', function () {
+        $('.gnb').toggleClass('on')
+    })
+
+    $('.mopen').on('click', function () {
+        $('.mopen').toggleClass('on')
+    })
 })
