@@ -1,0 +1,74 @@
+.wrap {
+    position: relative;
+}
+
+
+.header {
+    position: absolute;
+    border-top: 3px solid #444;
+    width: 100%;
+    line-height: 40px;
+}
+
+.header .content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.header .logo a {
+    display: block;
+    background: url(../img/h1_logo_new2022.png) no-repeat center;
+    font-size: 0px;
+    width: 244px;
+    height: 129px;
+}
+
+
+.gnb {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 130px;
+    text-align: center;
+}
+
+.gnb ul {
+    display: inline-block;
+}
+
+.gnb ul li {
+    float: left;
+    width: 165px;
+    font-size: 20px;
+
+}
+
+.util_menu {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+
+}
+
+.util_menu li {
+    float: left;
+    font-size: 13px;
+
+}
+
+.util_menu li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #333;
+    margin: 0 12px;
+    vertical-align: middle;
+}
