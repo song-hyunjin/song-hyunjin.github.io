@@ -43,11 +43,38 @@
     display: inline-block;
 }
 
-.gnb ul li {
+.gnb>ul>li {
+    position: relative;
     float: left;
     width: 165px;
     font-size: 20px;
+    border-bottom: 1px solid #c0a78c;
+}
 
+.gnb>ul>li>ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    background: #fff;
+    border: 1px solid #c0a78c;
+    border-radius: 5px;
+    z-index: 999;
+    font-size: 15px;
+    opacity: 0;
+}
+
+.gnb ul li:hover ul {
+    height: auto;
+    opacity: 1;
+
+}
+
+.gnb>ul>li>ul>li~li {
+    border-top: 1px solid #c0a78c;
 }
 
 .util_menu {
