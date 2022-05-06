@@ -457,6 +457,7 @@ responsive 768
 
     .main_slider .slick-dots li.slick-active {
         background: #fd7e14;
+        width: 40px;
     }
 
     .main_slider .slick-dots button {
