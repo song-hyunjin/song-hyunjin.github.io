@@ -72,6 +72,73 @@
         <main>
             <div class="main_event">
                 <div class="main_event_slider">
+                    <figure class="itm01"></figure>
+                    <figure class="itm02"></figure>
+                    <figure class="itm03"></figure>
+                </div>
+            </div>
+            <div class="middle_box">
+                <div class="one_box">
+                    <div class="best_menu">
+                        <p class="icon">
+                            <img src="./img/icon_bestMenu.png" alt="">
+                        </p>
+                        <a href="#none">
+                            <img src="./img/img_main_bestmenu.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="hot_menu">
+                        <p class="icon">
+                            <img src="./img/icon_hotMenu.png" alt="">
+                        </p>
+                        <a href="#none">
+                            <img src="./img/img_main_hotmenu.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="two_box">
+                    <p class="icon">
+                        <img src="./img/icon_shopSch.gif" alt="">
+                    </p>
+                    <p class="title">매장명 또는 지역을 입력해주세요.</p>
+                    <div class="form">
+                        <form action="javascript:formSubmit()" id="searchForm">
+                            <input type="text">
+                            <button>
+                                <i class="xi-search"></i>
+                            </button>
+                            <script>
+                                function formSubmit() {
+                                    var inVar = document.querySelector('#searchForm input');
+                                    console.log(inVar)
+                                    if (inVar.value.length < 8) alert('말이짧다.')
+                                    inVar.value = '';
+                                    inVar.focus();
+                                }
+                            </script>
+                        </form>
+                    </div>
+                    <div class="store_area">
+                        <ul id="searchlist">
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <strong>교촌치킨 역삼1호점</strong>
+                                        <a href="#!">지도보기</a>
+                                        <a href="#!">상세보기</a>
+                                    </dt>
+                                    <dd>
+                                        02-566-9942
+                                        <span>|</span>
+                                        서울특별시 강남구 역삼로14길 12 (역삼동)
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="three_box">
 
                 </div>
             </div>

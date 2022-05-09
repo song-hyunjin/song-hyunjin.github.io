@@ -1,18 +1,12 @@
 $(function () {
-    $('.main_slider').slick({
-        arrows:false,
-        dots: false,
-        infinite: true,
-        speed: 300,
-        fade: true,
-        cssEase: 'linear'
+
+    $('.main_event_slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
-    $('.mopen').on('click', function () {
-        $('.gnb').toggleClass('on')
-    })
 
-    $('.mopen').on('click', function () {
-        $('.mopen').toggleClass('on')
-    })
 })

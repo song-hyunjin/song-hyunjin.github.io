@@ -1,13 +1,16 @@
 .wrap {
     position: relative;
+    min-width: 1200px;
 }
 
 
 .header {
-    position: absolute;
     border-top: 3px solid #444;
     width: 100%;
+    height: 173px;
     line-height: 40px;
+    z-index: 99;
+    background: #fff;
 }
 
 .header .content {
@@ -98,4 +101,145 @@
     background: #333;
     margin: 0 12px;
     vertical-align: middle;
+}
+
+
+/* 메인비주얼 */
+
+
+main {
+    background: url(../img/bg_content.gif) 0 0 repeat;
+}
+
+.main_event {
+    position: relative;
+    text-align: center;
+}
+
+.main_event_slider figure {
+
+    height: 450px;
+    width: 1500px;
+}
+
+
+.main_event_slider .itm01 {
+    background: url(../img/pcmain_960x450_01.jpg) no-repeat center center;
+}
+
+.main_event_slider .itm02 {
+    background: url(../img/pcmain_960x450_02.jpg) no-repeat center center;
+}
+
+.main_event_slider .itm03 {
+    background: url(../img/pcmain_960x450_03.jpg) no-repeat center center;
+}
+
+
+.main_event_slider .slick-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 5%;
+    right: 20%;
+}
+
+.main_event_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    transition: 0.5s;
+}
+
+.main_event_slider .slick-dots li.slick-active {
+    background: #fd7e14;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.main_event_slider .slick-dots button {
+    display: none;
+}
+
+.middle_box>div {
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.one_box .best_menu {
+    position: relative;
+}
+
+.one_box .best_menu .icon {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 2;
+}
+
+.one_box .best_menu>a>img {
+    max-width: 100%;
+    height: 175px;
+    display: block;
+}
+
+.one_box .hot_menu {
+    position: relative;
+}
+
+.one_box .hot_menu .icon {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 2;
+}
+
+.one_box .hot_menu>a>img {
+    max-width: 100%;
+    height: 175px;
+    display: block;
+}
+
+.two_box {
+    width: 400px;
+    padding: 30px 2.1% 0;
+    background: #f5d8ae;
+}
+
+.two_box .title {
+    padding: 19px 0 14px 0;
+    background: url(../img/img_shopSch.png) no-repeat 93% top;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+}
+
+.two_box .form {
+    width: 100%;
+}
+
+#searchForm input[type='text'] {
+    width: 80%;
+    height: 40px;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#searchForm button {
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 30px;
+    width: 16%;
+    height: 40px;
+    cursor: pointer;
 }
