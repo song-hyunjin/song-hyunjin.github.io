@@ -70,14 +70,14 @@
             </div>
         </header>
         <main>
-            <div class="main_event">
+            <section class="main_event">
                 <div class="main_event_slider">
                     <figure class="itm01"></figure>
                     <figure class="itm02"></figure>
                     <figure class="itm03"></figure>
                 </div>
-            </div>
-            <div class="middle_box">
+            </section>
+            <section class="middle_box">
                 <div class="one_box">
                     <div class="best_menu">
                         <p class="icon">
@@ -111,7 +111,7 @@
                                 function formSubmit() {
                                     var inVar = document.querySelector('#searchForm input');
                                     console.log(inVar)
-                                    if (inVar.value.length < 8) alert('말이짧다.')
+                                    if (inVar.value.length < 8) alert('준비중입니다.')
                                     inVar.value = '';
                                     inVar.focus();
                                 }
@@ -136,12 +136,181 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
                 <div class="three_box">
-
+                    <p>
+                        <img src="./img/icon_news.gif" alt="">
+                        <a href=""><i class="xi-enter"></i></a>
+                    </p>
+                    <ul class="list">
+                        <li><a href="">
+                                <img src="./img/news_01.jpg" alt=""></img>
+                                <dl>
+                                    <dt>교촌치킨, 고객 맞이 가맹점 청소 나섰다…</dt>
+                                    <dd>2022-04-29</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <img src="./img/news_02.jpg" alt=""></img>
+                                <dl>
+                                    <dt>교촌치킨, 투고(To go)매장 ‘웅진플레이도..</dt>
+                                    <dd>2022-04-29</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <img src="./img/news_03.jpg" alt=""></img>
+                                <dl>
+                                    <dt>교촌에프앤비㈜, 대구경찰청과 보이스피싱..</dt>
+                                    <dd>2022-04-29</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <img src="./img/news_04.jpg" alt=""></img>
+                                <dl>
+                                    <dt>교촌치킨, 알로하! 하와이 간다... 하와이 지..</dt>
+                                    <dd>2022-04-29</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
+            <section class="main_menu">
+                <div class="hd">
+                    <h1>Kochon's Menu</h1>
+                    <div class="tap">
+                        <ul>
+                            <li><a href="#chicken">치킨</a></li>
+                            <li><a href="#hamburger">햄버거</a></li>
+                            <li><a href="#beer">맥주</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_slider_wrapper">
+                    <div class="menu_slider" id="chicken">
+                        <div class="front">
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/chicken_menu01.png" alt="">
+                                                <strong>교촌오리지날</strong>
+                                                <p>교촌만의 차별화된 마늘과 간장 소스의 풍부한 맛이 어우러진 한 마리 치킨</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/chicken_menu02.png" alt="">
+                                                <strong>교촌윙</strong>
+                                                <p>마늘과 간장소스의 풍부한 맛이 묻어나는 날개와 봉의 멋진 조화 교촌윙</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/chicken_menu03.png" alt="">
+                                                <strong>교촌스틱</strong>
+                                                <p>마늘과 간장 소스의 풍부한 맛과 다리부위의 담백한 맛이 어우러진 치킨</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/chicken_menu04.png" alt="">
+                                                <strong>교촌콤보</strong>
+                                                <p>마늘과 간장소스의 풍부한 맛에 가장 인기있는 부위인 날개와 다리를 함께 즐길 수 있는 메뉴</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_slider" id="hamburger">
+                        <div class="front">
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/hamburger_menu01.png" alt="">
+                                                <strong>교촌리얼치킨버거</strong>
+                                                <p>두툼한 통 치킨 패티와 스모크 바비큐 소스로 맛을 낸 웰메이드 수제치킨버거</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_slider" id="beer">
+                        <div class="front">
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/beermenu_01.jpg" alt="">
+                                                <strong>한라산 위트에일 (1000ml)</strong>
+                                                <p>한라산 위트에일은 오렌지 껍질과 아로마틱한 향신료가 가미된 각종 다채로운 과일 향으로 시작해, 산뜻한 산미로 마무리되어 잊을
+                                                    수 없는 상쾌함을 부담 없이 즐길 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/beermenu_02.jpg" alt="">
+                                                <strong>금강산 골든에일 (500ml)</strong>
+                                                <p>금강산 골든 에일은 풍미 가득한 황금빛 에일 맥주로 달콤한 향과 청량한 쓴맛이 완벽한 밸런스를 이루고 있습니다. 은은한
+                                                    꽃향기와 시트러스 향이 특징입니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/beermenu_03.jpg" alt="">
+                                                <strong>백두산 IPA (500ml)</strong>
+                                                <p>백두산 인디아 페일 에일의 첫 맛은 강렬합니다. 시트러스와 열대 과일의 폭발적인 향이 진하게 퍼지면서, 홉 고유의 씁쓸함이
+                                                    어우러져 진한 여운을 남깁니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#!">
+                                        <div class="menu_intro">
+                                            <div class="img">
+                                                <img src="./img/beermenu_04.jpg" alt="">
+                                                <strong>치맥 위트에일 (500ml)</strong>
+                                                <p>보리맥아와 밀맥아로 만든 정통 수제맥주로 강원도 청정지역의 지하 200m 암반수(지하수)를 사용했으며, 오렌지 필(껍질),
+                                                    고수씨앗으로 시트러스한 향 풍부합니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="./js/jquery-1.12.4.min.js"></script>

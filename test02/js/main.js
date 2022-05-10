@@ -8,5 +8,14 @@ $(function () {
         pauseOnFocus: false,
     });
 
+    // $('.tap a').on('click', function () {
+    //     $('#').show(),
+    //     $()
+    // });
+
+
+
+
 
 })
+

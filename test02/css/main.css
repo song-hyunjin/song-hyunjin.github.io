@@ -163,6 +163,12 @@ main {
     display: none;
 }
 
+.middle_box {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .middle_box>div {
     width: 400px;
     height: 350px;
@@ -224,6 +230,11 @@ main {
 
 .two_box .form {
     width: 100%;
+    padding: 20px 0;
+}
+
+.two_box .form {
+    border-bottom: 1px solid rgb(237, 112, 112);
 }
 
 #searchForm input[type='text'] {
@@ -242,4 +253,157 @@ main {
     width: 16%;
     height: 40px;
     cursor: pointer;
+}
+
+
+.two_box .store_area dt {
+    padding: 20px 0;
+}
+
+.two_box .store_area dt strong {
+    padding: 0 10px 0 0;
+    font-size: 13px;
+}
+
+.two_box .store_area dt a {
+    border: 1px solid #333;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+}
+
+.two_box .store_area dd {
+    font-size: 13px;
+}
+
+
+.three_box {
+    padding: 30px 2.1% 0;
+    background-color: #b3e1ce;
+    position: relative;
+}
+
+
+.three_box p {
+    display: flex;
+    padding: 0 0 20px 0;
+}
+
+.three_box p a {
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: 21px;
+}
+
+.three_box ul li {
+    padding: 8px 0;
+}
+
+.three_box ul li a {
+    width: 350px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.three_box ul li dl {
+    font-size: 15px;
+    padding: 0 0 0 5px;
+}
+
+.main_menu {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.main_menu .hd {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 80px;
+}
+
+
+.main_menu .hd h1 {
+    font-size: 31px;
+    font-weight: 900;
+}
+
+.main_menu .hd .tap {
+    margin: 0 0 0 auto;
+}
+
+.main_menu .hd .tap ul {
+    display: flex;
+    flex: 1;
+    /* gap: 30px; */
+    text-align: center;
+}
+
+.main_menu .hd .tap ul li {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(102, 97, 97);
+
+}
+
+
+.main_menu .hd .tap ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #333;
+    margin: 0 30px;
+    vertical-align: middle;
+}
+
+.menu_slider_wrapper {
+    position: relative;
+    width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.menu_slider_wrapper #chicken {
+    position: absolute;
+}
+
+.menu_slider_wrapper #hamburger {
+    position: absolute;
+}
+
+.menu_slider_wrapper #beer {
+    position: absolute;
+}
+
+.menu_slider_wrapper .menu_slider .front ul {
+    display: flex;
+
+}
+
+.menu_slider_wrapper .menu_slider .front ul .img {
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu_slider_wrapper .menu_slider .front ul .img img {
+    transition: 0.5s;
+}
+
+.menu_slider_wrapper .menu_slider .front ul .img img:hover {
+    transform: scale(1.5);
+}
+
+.menu_slider_wrapper .menu_slider .front ul .img strong {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+}
+
+.menu_slider_wrapper .menu_slider .front ul .img p {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(101, 100, 100);
 }
