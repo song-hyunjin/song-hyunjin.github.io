@@ -111,6 +111,36 @@ main {
     background: url(../img/bg_content.gif) 0 0 repeat;
 }
 
+
+.utube {
+    padding: 250px 0;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.utube .player {
+    position: relative;
+}
+
+.utube i {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.utube .xi-play {
+    position: absolute;
+    right: 50px;
+}
+
+
 .main_event {
     position: relative;
     text-align: center;
@@ -358,23 +388,11 @@ main {
 }
 
 .menu_slider_wrapper {
-    position: relative;
     width: 1200px;
     padding: 20px 0;
     margin: 0 auto;
 }
 
-.menu_slider_wrapper #chicken {
-    position: absolute;
-}
-
-.menu_slider_wrapper #hamburger {
-    position: absolute;
-}
-
-.menu_slider_wrapper #beer {
-    position: absolute;
-}
 
 .menu_slider_wrapper .menu_slider .front ul {
     display: flex;
@@ -406,4 +424,8 @@ main {
     font-size: 13px;
     font-weight: 400;
     color: rgb(101, 100, 100);
+}
+
+.menu_slider_wrapper>#hamburger>.front>ul {
+    width: 25%;
 }
