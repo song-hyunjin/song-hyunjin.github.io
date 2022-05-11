@@ -112,35 +112,6 @@ main {
 }
 
 
-.utube {
-    padding: 250px 0;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    color: #fff;
-}
-
-.utube .player {
-    position: relative;
-}
-
-.utube i {
-    position: absolute;
-    top: 180px;
-    right: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0 5px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.utube .xi-play {
-    position: absolute;
-    right: 50px;
-}
-
-
 .main_event {
     position: relative;
     text-align: center;
@@ -192,6 +163,33 @@ main {
 .main_event_slider .slick-dots button {
     display: none;
 }
+
+.utube {
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+.utube .player {
+    position: relative;
+}
+
+.utube figure {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.utube i {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 1px;
+}
+
 
 .middle_box {
     display: flex;
@@ -342,13 +340,17 @@ main {
 
 .main_menu {
     padding: 100px 0;
-    background: #fff;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main_menu .hd {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    padding: 0 60px;
+    justify-content: space-between;
     line-height: 80px;
 }
 
@@ -373,8 +375,17 @@ main {
     font-size: 15px;
     font-weight: 600;
     color: rgb(102, 97, 97);
-
 }
+
+.main_menu .hd .tap ul li.on {
+    color: rgb(15, 24, 88);
+    font-size: 19px;
+}
+
+.main_menu .hd .tap ul li strong {
+    cursor: pointer;
+}
+
 
 
 .main_menu .hd .tap ul>li~li::before {
@@ -387,17 +398,28 @@ main {
     vertical-align: middle;
 }
 
+
+
 .menu_slider_wrapper {
     width: 1200px;
     padding: 20px 0;
     margin: 0 auto;
 }
 
+.menu_slider_wrapper>div {
+    display: none;
+}
+
+.menu_slider_wrapper>div.on {
+    display: block;
+}
 
 .menu_slider_wrapper .menu_slider .front ul {
     display: flex;
 
 }
+
+
 
 .menu_slider_wrapper .menu_slider .front ul .img {
     text-align: center;
@@ -428,4 +450,42 @@ main {
 
 .menu_slider_wrapper>#hamburger>.front>ul {
     width: 25%;
+}
+
+.closing_box {
+    padding: 0 0 70px 0;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.closing_box h2 {
+    font-size: 31px;
+    font-weight: 900;
+    background: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.closing_box strong {
+    display: block;
+    margin: 20px 0;
+    font-size: 25;
+    font-weight: 600;
+}
+
+.closing_box .sns_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.closing_box .sns_wrap li {
+    font-size: 31px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border: 1px solid #fd7e14;
+    border-radius: 50%;
 }

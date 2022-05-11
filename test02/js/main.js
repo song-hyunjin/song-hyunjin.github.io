@@ -19,13 +19,20 @@ $(function () {
         playOnlyIfVisible: true,
     });
 
-    $('.utube i:nth-of-type(1)').on('click',function(){
+    $('.utube i:nth-of-type(1)').on('click', function () {
         $('#myMovie').YTPPlay();
     })
 
 
-    $('.utube i:nth-of-type(2)').on('click',function(){
+    $('.utube i:nth-of-type(2)').on('click', function () {
         $('#myMovie').YTPPause();
+    })
+
+
+    $('.main_menu li').on('click', function () {
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.menu_slider_wrapper .menu_slider').eq(idx).addClass('on').siblings().removeClass('on');
     })
 
 

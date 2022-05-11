@@ -71,12 +71,6 @@
             </div>
         </header>
         <main>
-            <section class="utube">
-                <div class="player" id="myMovie">
-                    <i class="xi-play"></i>
-                    <i class="xi-pause"></i>
-                </div>
-            </section>
             <section class="main_event">
                 <div class="main_event_slider">
                     <figure class="itm01"></figure>
@@ -84,13 +78,21 @@
                     <figure class="itm03"></figure>
                 </div>
             </section>
+            <section class="utube">
+                <div class="player" id="myMovie">
+                </div>
+                <figure>
+                    <i class="xi-play"></i>
+                    <i class="xi-pause"></i>
+                </figure>
+            </section>
             <section class="middle_box">
                 <div class="one_box">
                     <div class="best_menu">
                         <p class="icon">
                             <img src="./img/icon_bestMenu.png" alt="">
                         </p>
-                        <a href="#none">
+                        <a href="http://www.kyochon.com/menu/view.asp?id=38605&cg=2">
                             <img src="./img/img_main_bestmenu.jpg" alt="">
                         </a>
                     </div>
@@ -98,7 +100,7 @@
                         <p class="icon">
                             <img src="./img/icon_hotMenu.png" alt="">
                         </p>
-                        <a href="#none">
+                        <a href="http://www.kyochon.com/menu/view.asp?id=38606&cg=2">
                             <img src="./img/img_main_hotmenu.jpg" alt="">
                         </a>
                     </div>
@@ -131,8 +133,9 @@
                                 <dl>
                                     <dt>
                                         <strong>교촌치킨 역삼1호점</strong>
-                                        <a href="#!">지도보기</a>
-                                        <a href="#!">상세보기</a>
+                                        <a
+                                            href="http://www.kyochon.com/shop/domestic.asp?sido1=0&sido2=0&txtsearch=%EC%97%AD%EC%82%BC1%ED%98%B8">지도보기</a>
+                                        <a href="http://www.kyochon.com/shop/domestic_sch.asp?shop_id=119">상세보기</a>
                                     </dt>
                                     <dd>
                                         02-566-9942
@@ -147,7 +150,7 @@
                 <div class="three_box">
                     <p>
                         <img src="./img/icon_news.gif" alt="">
-                        <a href=""><i class="xi-enter"></i></a>
+                        <a href="http://www.kyochon.com/cs/notice_view.asp?seq=744"><i class="xi-enter"></i></a>
                     </p>
                     <ul class="list">
                         <li><a href="">
@@ -158,7 +161,7 @@
                                 </dl>
                             </a>
                         </li>
-                        <li><a href="">
+                        <li><a href="http://www.kyochon.com/cs/notice_view.asp?seq=743">
                                 <img src="./img/news_02.jpg" alt=""></img>
                                 <dl>
                                     <dt>교촌치킨, 투고(To go)매장 ‘웅진플레이도..</dt>
@@ -166,7 +169,7 @@
                                 </dl>
                             </a>
                         </li>
-                        <li><a href="">
+                        <li><a href="http://www.kyochon.com/cs/notice_view.asp?seq=742">
                                 <img src="./img/news_03.jpg" alt=""></img>
                                 <dl>
                                     <dt>교촌에프앤비㈜, 대구경찰청과 보이스피싱..</dt>
@@ -174,7 +177,7 @@
                                 </dl>
                             </a>
                         </li>
-                        <li><a href="">
+                        <li><a href="http://www.kyochon.com/cs/notice_view.asp?seq=741">
                                 <img src="./img/news_04.jpg" alt=""></img>
                                 <dl>
                                     <dt>교촌치킨, 알로하! 하와이 간다... 하와이 지..</dt>
@@ -189,15 +192,15 @@
                 <div class="hd">
                     <h1>Kochon's Menu</h1>
                     <div class="tap">
-                        <ul>
-                            <li><a href="#chicken">치킨</a></li>
-                            <li><a href="#hamburger">햄버거</a></li>
-                            <li><a href="#beer">맥주</a></li>
+                        <ul class="tap_link">
+                            <li class="on"><strong>치킨</strong></li>
+                            <li><strong>햄버거</strong></li>
+                            <li><strong>맥주</strong></li>
                         </ul>
                     </div>
                 </div>
                 <div class="menu_slider_wrapper">
-                    <div class="menu_slider" id="chicken">
+                    <div class="menu_slider on" id="chicken">
                         <div class="front">
                             <ul>
                                 <li>
@@ -318,8 +321,25 @@
                     </div>
                 </div>
             </section>
+            <section class="closing_box">
+                <h2>Kochon's SNS</h2>
+                <strong>교촌과 함께하는 SNS</strong>
+                <ul class="sns_wrap">
+                    <li><a href=""><i class="xi-facebook"></i></a></li>
+                    <li><a href=""><i class="xi-instagram"></i></a></li>
+                    <li><a href=""><i class="xi-twitter"></i></a></li>
+                    <li><a href=""><i class="xi-youtube"></i></a></li>
+                </ul>
+            </section>
         </main>
+        <footer>
+
+        </footer>
     </div>
+
+
+
+
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
