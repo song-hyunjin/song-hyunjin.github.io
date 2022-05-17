@@ -15,6 +15,12 @@ $(function () {
     });
 
 
+    $('.mbtn').on('click', function () {
+        $('.gnb').toggleClass('on')
+        $(this).toggleClass('is-active')
+    })
+
+
     // $(".menu>li>a").click(function () {
     //     $(this).next("p").slideToggle(200);
     //     $(this).parent("li").siblings("li").children("p").slideUp(200);

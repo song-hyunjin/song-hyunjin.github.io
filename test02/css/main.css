@@ -100,6 +100,10 @@
     border-top: 1px solid #c0a78c;
 }
 
+.content .mbtn {
+    display: none;
+}
+
 .util_menu {
     position: absolute;
     right: 25px;
@@ -700,13 +704,17 @@ responsive 768
     .gnb {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         width: calc(100% - 150px);
         height: 100vh;
         background: #fff;
         border-right: 1px solid #333;
         z-index: 1000;
         transition: 0.5s;
+    }
+
+    .gnb.on {
+        left: 0;
     }
 
     .gnb>ul {
@@ -750,6 +758,19 @@ responsive 768
         border-top: 1px solid #c0a78c;
     }
 
+    .content .mbtn {
+        display: block;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        line-height: 1;
+        height: 40px;
+        padding: 5px;
+        background: #ddd;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
     .util_menu {
         display: none;
     }
@@ -760,7 +781,7 @@ responsive 768
 
 
     main {
-        background: url(../img/bg_content.gif) 0 0 repeat;
+        background: none;
     }
 
 
@@ -771,21 +792,21 @@ responsive 768
 
     .main_event_slider figure {
 
-        height: 450px;
-        width: 1500px;
+        height: calc(100vh -100px);
+        width: auto;
     }
 
 
     .main_event_slider .itm01 {
-        background: url(../img/pcmain_960x450_01.jpg) no-repeat center center;
+        background: url(../img/pcmain_960x450_01.jpg) no-repeat left center/cover;
     }
 
     .main_event_slider .itm02 {
-        background: url(../img/pcmain_960x450_02.jpg) no-repeat center center;
+        background: url(../img/pcmain_960x450_02.jpg) no-repeat left center/cover;
     }
 
     .main_event_slider .itm03 {
-        background: url(../img/pcmain_960x450_03.jpg) no-repeat center center;
+        background: url(../img/pcmain_960x450_03.jpg) no-repeat left center/cover;
     }
 
 
@@ -817,30 +838,9 @@ responsive 768
     }
 
     .utube {
-        padding: 100px 0;
-        margin: 0 auto;
-        width: 1200px;
+        display: none;
     }
 
-
-    .utube .player {
-        position: relative;
-    }
-
-    .utube figure {
-        position: absolute;
-        top: 160px;
-        right: 0;
-        padding: 10px;
-        margin: 0 5px;
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    .utube i {
-        background: rgba(0, 0, 0, 0.5);
-        margin: 0 1px;
-    }
 
 
     .middle_box {
